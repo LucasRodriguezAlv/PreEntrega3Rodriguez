@@ -29,13 +29,8 @@ $tarjeta: (
 }
 
 @mixin letra ($align, $size, $style){
-    align-items: $align;
+    text-align: $align;
     font-size: $size;
     font-style: $style;
 }
 
-@mixin grid ($grid, $row, $column){
-    display: $grid;
-    grid-template-rows: $row;
-    grid-template-columns: $column;
-}

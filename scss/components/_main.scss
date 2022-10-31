@@ -1,4 +1,5 @@
 @import "../base/variables";
+@import "../base/media";
 
 main{
     .fondo {
@@ -67,11 +68,8 @@ main{
             }
         }
     }
-
-
-main{
     .titulocabania{
-        @include letra (center,30px, normal );
+        @include letra (center ,30px, normal );
         color: black;
         text-decoration: underline;
         background-color: $color-cabanias;
@@ -79,7 +77,9 @@ main{
     .cabaniasParaelegir{
         background-color:$color-cabanias;
         align-items: center;
-        @include grid (grid, auto, repeat (2,1fr));
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
         div{
             border:solid;
             align-items: center;
@@ -109,10 +109,6 @@ main{
             }
         }
     }
-}
-
-
-main{
     .nosotros{
         background-image: url(../img/fondo\ nosotros.jpg);
         @extend %fondo;
@@ -124,7 +120,9 @@ main{
         div{
                 @extend %flexbox;
                 gap: 10px;
-                @include grid (grid, 200px 200px, 50% 50%);
+                display: grid;
+                grid-template-rows: 200px 200px;
+                grid-template-columns: 50% 50%;
                 grid-row-gap: 20px;
                 grid-column-gap: 20px;
             }
@@ -145,12 +143,6 @@ main{
                 justify-content: center;
             }        
     }
-}
-
-
-
-
-main{
     .servicios{
         background-color: $color-secundario; 
         h2{
@@ -179,10 +171,6 @@ main{
         }
         
     }
-}
-
-
-main{
     .contacto{
         background-image: url(../img/pexels-carlos-torres-11680560.jpg);
         background-size: cover;
@@ -203,10 +191,6 @@ main{
                 }
             }
     }
-}
-
-
-main{
     .tituloAct{
         background-image: url(../img/playa.jpg);
         @extend %fondo;
@@ -222,6 +206,18 @@ main{
         gap: 10px;
         background-image: url(../img/fondo\ act.jpg);
         @extend %fondo;
+        .img7{
+            grid-row: span 2;
+        }
+        .img6{
+            grid-column: span 2;
+        }
+        .img4{
+            grid-column:  span 2;
+        }
+        .img2{
+            grid-column: span 2;
+        }
         div{
                 position: relative;
             p{
@@ -240,19 +236,22 @@ main{
                 border-style: double;
                 background-position: center;
             }
-        .img7{
-                grid-row: span 2;
-            }
-        .img6{
-                grid-column: span 2;
-            }
-        .img4{
-                grid-column:  span 2;
-            }
-        .img2{
-                grid-column: span 2;
-            }
+        
         }
     }
 }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -70,11 +70,10 @@
         
     }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1000px) {
     .nosotros{
         h2{
-            display: flex;
-            justify-content: center;
+            text-align: center;
         }
         div{
             p{
@@ -97,7 +96,16 @@
 }
 @media screen and (max-width: 900px) {
     .reserva{
-        display: list-item;
+        display: flex;
+        flex-direction: column;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .formulario{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
