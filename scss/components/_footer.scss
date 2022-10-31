@@ -1,0 +1,39 @@
+@import "../base/variables";
+
+footer{
+    background-color:black;
+    @include tamaño (100%, 200px);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    div{
+        @include tamaño (100%, auto);
+        display: flex;
+        justify-content: center;
+        a{
+            @include tamaño (50px, 50px);
+            margin-top: 20px;
+        }
+        iframe{
+            @include tamaño (175px, 175px);
+            display: flex;
+            justify-content: right;
+        }
+    }
+    .jamonrosado{
+        color:darkkhaki;
+        text-align: center;
+        font-style:italic ;
+    }
+}
+.atencion{ 
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    background-color: coral;
+    font-size: 15px;
+    border: 1px black;
+    border-radius: 100%;
+    margin: 10px;
+    padding: 35px;
+}

@@ -1,0 +1,41 @@
+$color-principal: tan;
+$color-secundario: rgba(96, 161, 83, 0.329);
+$color-cabanias: palegoldenrod;
+
+   /////-Maps-//////
+$tarjeta: (
+    borde: black 2px dotted,
+    fuente: Arial Helvetica sans-serif
+    color-texto white
+    bg-color rgba(0, 0, 0, 0.26)
+);
+
+///-extends-////
+%fondo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+%flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin tamaño ($width, $height ){
+    width: $width;
+    height: $height;
+}
+
+@mixin letra ($align, $size, $style){
+    align-items: $align;
+    font-size: $size;
+    font-style: $style;
+}
+
+@mixin grid ($grid, $row, $column){
+    display: $grid;
+    grid-template-rows: $row;
+    grid-template-columns: $column;
+}

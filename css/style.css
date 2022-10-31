@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**----HEADER----**/
+
+
+
+
+header div{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-evenly;
+    background-color:tan;
+}
+
+header div h1{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+header div img{
+    border-radius: 100%;
+}
+
+nav ul{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    background-color: tan;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    font-size: 20px;
+    font-weight: 800;
+    font-stretch: expanded;
+    text-decoration: none;    
+}
+
+.nudo{
+    background-color: tan;
+}
+.nudo img{
+    width: 100%;
+    height: 300px;
+}
+
+
+/**-------MAIN------**/
+
+.fondo {
+    background-image: url(../img/fondo\ index.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
+}
+
+.fondo p{
+    width: 30%;
+    margin-top: 70px;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto;
+    columns: center;
+    
+}
+
+.fondo h3{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 50px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+
+.hero{
+    color:black;
+    text-decoration-line: underline;
+    
+}
+
+
+.complemento{
+    position: relative;
+    text-align: center;
+    
+}
+.hero{
+    align-items: center;
+    text-align: center;
+    background-color: tan;
+}
+.hero div{
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    border: 1px dotted black ;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+.hero div a{
+    text-decoration: none;
+    background-color: darkgoldenrod;
+    
+}
+.reserva{
+    display: inline-block;
+}
+
+.tituloReserva{
+    color: chocolate;
+    font-size: 25px;
+    font-style: initial;
+    text-decoration:underline;
+}
+form{
+    background-color:tan;
+}
+.reservaRapida{
+    padding: 15px;
+    background-color: goldenrod;
+}
+
+@media screen and (max-width: 900px){
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+/**-----cabaniass-----*/
+.titulocabania{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    text-decoration: underline;
+    background-color: palegoldenrod;
+}
+
+.cabaniasParaelegir div p{
+    font-size: 20px;
+    font-style:oblique;
+    margin: auto;
+    text-align: center;
+    
+}
+.cabaniasParaelegir div a{
+    text-decoration: none;
+    background-color:palegoldenrod;
+    width: auto;
+    padding: 10px ;
+    color: indigo;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+.cabaniasParaelegir div img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+
+    
+
+}
+
+
+.cabaniasParaelegir{
+    background-color:palegoldenrod;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+.cabaniasParaelegir div{
+    border:solid;
+    align-items: center;
+    object-fit: cover;
+}
+
+/**-----nosotros-------**/
+.nosotros{
+    background-image: url(../img/fondo\ nosotros.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.nosotros img{
+width: 450px;
+height: 400px;
+display: flex;
+justify-content: center;
+
+}
+.nosotros div{
+    display:flex;
+    text-align: center;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    
+    
+}
+.nosotros p{
+font-size: large;
+text-align: justify;
+color:white;
+margin-top: 100px;
+transition: 3s;
+transform: translateX(-200px);
+
+}
+
+.nosotros h2{
+    color: crimson;
+    text-decoration: line-through;
+    background-color: black;
+    width:fit-content;
+}
+
+/**-----servicios----**/
+
+.servicios img{
+    height: 200px;
+    width: 200px;
+    padding: 30px;
+
+}
+.servicios div{
+    display: inline-block;
+    text-align: center;
+    margin: 30px;
+    border: 2px dotted black ;
+    border-radius: 10px;
+}
+
+.servicios{
+    background-color: rgba(96, 161, 83, 0.329);
+}
+
+.servicios p{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.servicios h2{
+    text-align: center;
+    font-style:oblique;
+    text-decoration: underline;
+    background-color: black;
+    color: darkgoldenrod;
+}
+
+/**-----contacto----**/
+.contactoFormulario{
+    font-size: 20px;
+    padding: 35px;
+    width:auto;
+    height: auto;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.contacto h2{
+text-align: center;
+font-size: 40px;
+color: black;
+font-style: oblique;
+text-decoration:underline;
+}
+
+.contactoFormulario div{
+    display: inline-block;
+    padding: 25px;
+    margin: auto;
+}
+.contacto{
+    background-image: url(../img/pexels-carlos-torres-11680560.jpg);
+    background-size: cover;
+}
+
+
+/**-----actividades----**/
+
+.tituloAct{
+    background-image: url(../img/playa.jpg);
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: transparent;
+}
+.actividades{
+    width: 100%;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 350px;
+    gap: 10px;
+    background-image: url(../img/fondo\ act.jpg);
+    background-size: cover;
+}
+.actividades div p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.26);
+    color: white;
+    
+
+}
+.actividades div{
+    position: relative;
+}
+.actividades div img{
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    object-fit: cover;
+    border: 5px;
+    border-style: double;
+    background-position: center;
+
+}
+.img7{
+    grid-row: span 2;
+}
+.img6{
+    grid-column: span 2;
+}
+.img4{
+    grid-column:  span 2;
+}
+.img2{
+    grid-column: span 2;
+}
+
+/**-------FOOTER----**/
+.jamonrosado{
+    color:darkkhaki;
+    text-align: center;
+    font-style:italic ;
+}
+
+footer{
+    background-color:black;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+footer div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer div a{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+footer div iframe{
+    height: 175px;
+    width: 175px;
+    display: flex;
+    justify-content: right;
+}
+.atencion{ 
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    background-color: coral;
+    font-size: 15px;
+    border: 1px black;
+    border-radius: 100%;
+    margin: 10px;
+    padding: 35px;
+}
+
+/*-----MEDIA QUERIE-----*/
+
+@media screen and (max-width: 850px) {
+    .actividades{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 250px;
+    }
+
+    .actividades div{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .actividades{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 150px;
+        object-position: center;
+    }
+    .nudo ul {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
+    .nudo ul li{
+        margin-top: 5px;
+    }
+    footer div iframe{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cabaniasParaelegir{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+}
+
+/*----TRANSICIONES ANIMACIONES-----*/
+.nudo ul li :hover{
+    background-color:darkgoldenrod ;
+    transition: 0.5s;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.servicios div :hover{
+    transform: scale(1.1);
+}
+.cabaniasParaelegir div a :hover{
+    background-color: red;
+}
+
+.fondo p:hover{
+    transition: 3s;
+    transform: translateX(470px);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white
+}
+
+@media screen and (max-width: 865) {
+    .reserva{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .redessociales{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .atencion{
+        display: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .fondo p{
+        display: none;
+        
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .nosotros h2{
+            display: flex;
+            justify-content: center;
+        }
+        .nosotros div p{
+                display: flex;
+                justify-content: flex-end;
+        }
+}
