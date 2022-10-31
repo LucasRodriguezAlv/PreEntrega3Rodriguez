@@ -118,6 +118,34 @@ main .nosotros div, main .fondo h3 {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 1200px) {
+  .servicios {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 900px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
 main .fondo {
   background-image: url(../img/fondo\ index.jpg);
   background-attachment: fixed;
@@ -472,6 +500,34 @@ main .fondo h3, main .nosotros div {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 1200px) {
+  .servicios {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 900px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
 footer {
   background-color: black;
   width: 100%;
@@ -617,6 +673,34 @@ main .fondo h3, main .nosotros div {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 1200px) {
+  .servicios {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 900px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
 header div {
   display: flex;
   width: 100%;
@@ -751,5 +835,33 @@ header nav ul li:hover {
   .formulario {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .servicios {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 900px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 }/*# sourceMappingURL=estilos.css.map */
