@@ -135,12 +135,13 @@ main{
                 transform: translateX(-200px);
             }
         h2{
+                display: flex;
+                justify-content: center;
                 color: $color-principal;
                 text-decoration:solid;
                 background-color: black;
                 width:fit-content;
-                display: flex;
-                justify-content: center;
+                
             }        
     }
     .servicios{

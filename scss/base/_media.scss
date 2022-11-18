@@ -1,48 +1,73 @@
 
-@media screen and (max-width: 850px) {
-    .actividades{
+@media screen and (max-width:750px) {
+    main .actividades {
+        width: 100%;
+        height: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 250px;
-    }
-
-    .actividades div{
-        grid-column: span 1;
-        grid-row: span 1;
+        grid-auto-rows: 350px;
+        
     }
     
 }
 
 @media screen and (max-width: 550px) {
-    .actividades{
+    main .actividades{
+        width: 100%;
+        height: auto;
+        display: grid;
         grid-template-columns: 1fr;
-        grid-auto-rows: 150px;
-        object-position: center;
+        grid-auto-rows: 300px;
+        .img3{
+            grid-column: span 2;
+        }
+        .img5{
+            grid-column: span 2;
+        }
+        .img8{
+            grid-column: span 2;
+        } 
     }
-    .nudo ul {
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-    }
-    .nudo ul li{
-        margin-top: 5px;
-    }
+    
+}
+
+@media screen and (max-width: 550px) {
     footer div iframe{
         height: 100px;
         width: 100px;
     }
+    
 }
 
+@media screen and (max-width: 550px) {
+    .nudo ul {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        li{
+            margin-top: 5px;
+        }
+    }
+    
+}
 @media screen and (max-width: 600px) {
-    .cabaniasParaelegir{
+    main .cabaniasParaelegir{
         display: grid;
         grid-template-columns: 1fr;
-        grid-auto-rows: auto;
+        grid-template-rows: auto;
     }
 }
 
-@media screen and (max-width: 865) {
-    .reserva{
+@media screen and (max-width: 750px) {
+    .contacto .contactoFormulario div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 865px) {
+    main section form .reserva{
         display: flex;
         flex-direction: column;
         margin-top: 2px;
@@ -63,62 +88,82 @@
 }
 
 @media screen and (max-width: 450px) {
-    .fondo{
-        p{
-            display: none;
+    .fondo p{
+            display: flex;
+            justify-content: center;
     } 
-        
-    }
-}
-@media screen and (max-width: 1000px) {
-    .nosotros{
-        h2{
-            text-align: center;
-        }
-        div{
-            p{
-                display: flex;
-                justify-content: flex-end;
-            }
-        }
-    }
+
 }
 
+@media screen and (max-width:700px) {
+    .nosotros h2{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        text-align: center;
+    } 
+}
+@media screen and (max-width: 650px) {
+    .nosotros div img{
+        display: none;
+
+    }
+    
+}
+@media screen and (max-width: 649px) {
+    .nosotros div p{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+        color: $color-principal;
+        margin-left: 380px;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .nosotros div p{
+        margin-left: none;
+        margin-top: none;
+        width: 80vh;
+    }
+    
+}
 @media screen and (max-width: 1000px){
-    .hero{
-        div{
+    .hero div{
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 150px;
         }
     }
     
-}
 @media screen and (max-width: 900px) {
-    .reserva{
+    form .reserva label input{
         display: flex;
         flex-direction: column;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .formulario{
+    .formulario .contactoFormulario div 
+    {
         display: flex;
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .servicios{
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    .servicios div {
         display: grid;
         grid-template-rows:auto ;
         grid-template-columns:repeat(4, 1fr ) ;
     }
-
 }
 
 @media screen and (max-width: 900px) {
-    .servicios{
+    .servicios div {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -126,7 +171,7 @@
 }
 
 @media screen and (max-width: 700px) {
-    .servicios{
+    .servicios div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
@@ -134,7 +179,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .servicios{
+    .servicios div  {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
